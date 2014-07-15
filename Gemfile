@@ -10,10 +10,6 @@ gem 'rails', '4.0.8'
 gem 'rails-api'
 gem 'puma'
 
-group :production do
-  gem 'rpm_contrib'
-end
-
 group :test, :development do
   gem 'rspec-rails'
   gem 'pry-rails'
