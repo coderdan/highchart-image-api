@@ -8,9 +8,7 @@ gem 'rails', '4.0.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'rails-api'
-gem 'active_attr'
 gem 'puma'
-gem 'pg'
 
 group :production do
   gem 'rpm_contrib'
