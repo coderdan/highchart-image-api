@@ -7,7 +7,9 @@ class ChartImagesController < ApplicationController
   private
 
   def chart_image
-    @chart_image ||= ChartImage.new(input: params[:input], width: params[:width])
+    @chart_image ||= ChartImage.new(params[:input], {
+      width: params[:width],
+    })
   end
   
 end

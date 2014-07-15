@@ -1,10 +1,13 @@
 class ChartImage
 
-  include ActiveAttr::Model
+  attr_accessor :input
+  attr_accessor :width
+  attr_accessor :callback
 
-  attribute :input
-  attribute :width, default: 300
-
+  def initialize(input, width: 300)
+    self.input = input
+    self.width = width
+  end
 
   def file
     @file ||= generate_chart

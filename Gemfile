@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '1.9.3'
+ruby '2.1.2'
 
-gem 'rails', '>=3.2.11'
+gem 'rails', '4.0.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -13,7 +13,6 @@ gem 'puma'
 gem 'pg'
 
 group :production do
-  gem 'rails_log_stdout', git: 'git://github.com/threadedlabs/rails_log_stdout.git'
   gem 'rpm_contrib'
 end
 
