@@ -7,8 +7,7 @@ gem 'rails', '4.0.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'rails-api'
-gem 'puma'
+gem 'puma', '~> 2.9.0'
 
 group :test, :development do
   gem 'rspec-rails'
@@ -16,17 +15,9 @@ group :test, :development do
   gem 'pry-nav'
 end
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano', :group => :development
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+group :development do
+  gem 'capistrano', '~> 3.2.0'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
+  gem 'capistrano3-puma', github: "seuros/capistrano-puma"
+end
